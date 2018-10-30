@@ -1,0 +1,23 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Budget</th>
+      <th>Boxoffice</th>
+      <th>Overview</th>
+      <th>Releasedate</th>;
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let movie of movies"> 
+      <td>{{movie.id}}</td>
+      <td>{{movie.title}}</td>
+      <td>{{movie.budget|currency}}</td>
+      <td>{{movie.revenue|currency}}</td>
+      <td>{{movie.overview}}</td>
+      <td>{{movie.releaseDate|date:'medium'}}</td>
+    </tr>
+   
+  </tbody>
+</table>
